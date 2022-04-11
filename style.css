@@ -9,6 +9,9 @@
 :root {
     --white-color:#fff;
     --body-background:#262626;
+    --boxbackground:#444;
+    --gradient-color-blue:#2da2ff;
+    --gradiend-color-dark:#444;
 }
 
 
@@ -19,5 +22,24 @@ body {
     align-items: center;
     min-height: 100vh;
     background: var(--body-background);
+
+}
+
+.container {
+    position:relative;
+    display: flex;
+}
+
+.container .box {
+    position:relative;
+    width: 320px;
+    height: 400px;
+    /* background: var(--boxbackground); */
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, var(--gradient-color-blue) 25%, var(--gradiend-color-dark) 25%, var(--gradiend-color-dark) 50%, var(--gradient-color-blue) 50%, var(--gradient-color-blue) 75%, var(--gradiend-color-dark) 75%, var(--gradiend-color-dark) 100% );
+    background-size: 40px 40px;
+    filter: grayscale(1);
+    animation: animateBg 0.5s linear infinite;
 
 }
