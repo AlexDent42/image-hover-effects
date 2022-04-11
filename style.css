@@ -44,6 +44,8 @@ body {
     filter: grayscale(1);
     animation: animateBg 0.5s linear infinite;
     animation-play-state:paused;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -74,4 +76,16 @@ body {
     100% {
         background-position: 40px;
     }
+}
+
+.container .box img {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    transition: height 0.5s;
+}
+
+
+.container .box:hover img {
+height: 480px;
 }
